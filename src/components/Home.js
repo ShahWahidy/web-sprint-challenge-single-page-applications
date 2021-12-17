@@ -5,7 +5,7 @@ export default function Home() {
     const history = useHistory();
 
   const routeToOrder = () => {
-    history.push('/items-list');
+    history.push('/order-pizza');
   }
   return (
     <div className='home-wrapper'>
@@ -14,7 +14,7 @@ export default function Home() {
         src='https://source.unsplash.com/IfQlwNqJqV8'
         alt=''
       />
-      <button
+      <button id='order-pizza'
         onClick={routeToOrder}
         className='md-button shop-button'
       >
