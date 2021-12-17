@@ -33,7 +33,7 @@ export default function Order() {
         <label>Onion
           <input
             type='checkbox'
-            name='Onions'
+            name='Onion'
           />
         </label>
         <label>Mushroom
@@ -50,7 +50,7 @@ export default function Order() {
         </label>
         <label>Special Instructions
           <input id='special-text'
-            name='special-instruction'
+            name='specialText'
             type='text'
           />
         </label>
