@@ -49,7 +49,7 @@ export default function Order() {
           />
         </label>
         <label>Special Instructions
-          <input id='special-instructions'
+          <input id='special-text'
             name='special-instruction'
             type='text'
           />
