@@ -88,7 +88,7 @@ export default function Order(props) {
           />
         </label>
       </div>
-      <button id='order-id' type='submit'>submit order</button>
+      <button id='order-button' type='submit'>submit order</button>
       </div>
     </form>
   )
