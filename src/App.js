@@ -16,11 +16,11 @@ const App = () => {
         </div>
       </nav>
       <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route path='order-pizza'>
+        <Route path='/order-pizza'>
           <Order />
+        </Route>
+        <Route  path='/'>
+          <Home />
         </Route>
 
       </Switch>
