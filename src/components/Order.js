@@ -7,7 +7,7 @@ export default function Order() {
      <div className='form-group inputs'>
         <h4>Please Build Your Pizza</h4>
         <label>Name
-          <input id='name'
+          <input id='name-input'
             name='name'
             type='text'
           />
