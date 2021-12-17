@@ -13,7 +13,7 @@ export default function Order() {
           />
         </label>
         <label>Pizza Size
-          <select
+          <select id='size-dropdown'
             name='size'
           >
             <option value=''>-- Select a size --</option>
