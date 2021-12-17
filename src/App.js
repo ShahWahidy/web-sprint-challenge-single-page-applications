@@ -12,11 +12,11 @@ const App = () => {
         <h1 className='store-header'>Bloom Tech Pizza Day</h1>
         <div className='nav-links'>
           <Link to="/">Home</Link>
-          <Link to="/order-pizza">Order</Link>
+          <Link to="/pizza">Order</Link>
         </div>
       </nav>
       <Switch>
-        <Route path='/order-pizza'>
+        <Route path='/pizza'>
           <Order />
         </Route>
         <Route  path='/'>

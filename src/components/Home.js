@@ -5,7 +5,7 @@ export default function Home() {
     const history = useHistory();
 
   const routeToOrder = () => {
-    history.push('/order-pizza');
+    history.push('/pizza');
   }
   return (
     <div className='home-wrapper'>
