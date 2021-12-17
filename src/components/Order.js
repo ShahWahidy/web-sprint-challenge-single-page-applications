@@ -6,9 +6,9 @@ export default function Order() {
     <form className='form container'>
      <div className='form-group inputs'>
         <h4>Please Build Your Pizza</h4>
-        <label>Username&nbsp;
-          <input
-            name='username'
+        <label>Name
+          <input id='name'
+            name='name'
             type='text'
           />
         </label>
@@ -46,6 +46,12 @@ export default function Order() {
           <input
             type='checkbox'
             name='garlic'
+          />
+        </label>
+        <label>Special Instructions
+          <input id='special-instructions'
+            name='special-instruction'
+            type='text'
           />
         </label>
       </div>

@@ -1,7 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 export default function Home() {
-  
+    const history = useHistory();
+
+  const routeToOrder = () => {
+    history.push('/items-list');
+  }
   return (
     <div className='home-wrapper'>
       <img
@@ -9,7 +14,12 @@ export default function Home() {
         src='https://source.unsplash.com/IfQlwNqJqV8'
         alt=''
       />
-     
+      <button
+        onClick={routeToOrder}
+        className='md-button shop-button'
+      >
+        Order now!
+      </button>
     </div>
   )
 }
