@@ -39,9 +39,9 @@ const App = () => {
   const postNewOrder = newOrder => {
     axios.post('https://reqres.in/api/orders', newOrder)
     .then(res =>{
-      setOrders([res.data.data, ...orders])
+      setOrders(res.data.data, ...orders)
     })
-    .catch(err => console.error(err))
+    .catch(err => console.err(err))
     .finally(() => setFormValues(initialFormValues));
   }
   
@@ -69,7 +69,7 @@ const App = () => {
     const newOrder = {
       name: formValues.name.trim(),
       specialText: formValues.specialText.trim(),
-      hobbies: ['Olive', 'onion', 'garlic', 'mushroom'].filter(topping => !!formValues[topping])
+      hobbies: ['Olive', 'onion', 'garlic', 'mushroom'].filter(hobby => !!formValues[hobby])
     }
 
     postNewOrder(newOrder);
@@ -85,12 +85,7 @@ const App = () => {
       </nav>
       <Switch>
         <Route path='/pizza'>
-          <Order
-          values={formValues}
-          change={inputChange}
-          submit={formSubmit}
-          errors={formError}   
-          />
+          <Order />
         </Route>
         <Route  path='/'>
           <Home />
