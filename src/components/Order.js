@@ -1,5 +1,5 @@
-import React from 'react'
 
+import React from 'react'
 export default function Order(props) {
   const {
     values,
@@ -22,6 +22,9 @@ export default function Order(props) {
     <form className='form container' id='pizza-form' onSubmit={onSubmit}>
      <div className='form-group inputs'>
         <h4>Please Build Your Pizza</h4>
+        <div className='errors'>
+          <div>{errors.name}</div>
+        </div>
         <label>Name
           <input id='name-input'
             name='name'
@@ -85,7 +88,7 @@ export default function Order(props) {
           />
         </label>
       </div>
-      <button id='order-id'>submit order</button>
+      <button id='order-id' type='submit'>submit order</button>
       </div>
     </form>
   )

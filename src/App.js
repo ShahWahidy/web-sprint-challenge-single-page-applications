@@ -52,7 +52,8 @@ const App = () => {
 
   const formSubmit = () => {
     const newOrder = {
-      username: formValues.name.trim(),
+      name: formValues.name.trim(),
+      size: formValues.size.trim(),
       toppings: ['olive', 'onion', 'garlic', 'mushroom'].filter(topping => !!formValues[topping])
     }
     postNewOrder(newOrder);
